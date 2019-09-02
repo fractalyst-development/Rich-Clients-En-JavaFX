@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pocs.ventanasdedialogo.FXMLDocumentController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Ventanas de Dialogo">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showAlertDialog" text="Alert" />
+                        <MenuItem mnemonicParsing="false" onAction="#showWarningDialog" text="Warning" />
+                  <MenuItem mnemonicParsing="false" onAction="#showErrorDialog" text="Error" />
+                  <MenuItem mnemonicParsing="false" onAction="#showExceptionDialog" text="Exception" />
+                  <MenuItem mnemonicParsing="false" onAction="#showConfirmationDialog" text="Confimation" />
+                  <MenuItem mnemonicParsing="false" onAction="#showConfirmationCustomActionsDialog" text="Confimation Custom" />
+                  <MenuItem mnemonicParsing="false" onAction="#showTextInputDialog" text="TextInput" />
+                  <MenuItem mnemonicParsing="false" onAction="#showChoiceDialog" text="Choice" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <bottom>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button mnemonicParsing="false" text="Button" />
+                <Button mnemonicParsing="false" text="Button" />
+            </buttons>
+            <padding>
+                <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </padding>
+        </ButtonBar>
+    </bottom>
+</BorderPane>

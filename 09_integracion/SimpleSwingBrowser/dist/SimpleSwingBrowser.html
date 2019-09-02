@@ -1,0 +1,50 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'SimpleSwingBrowser.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU2ltcGxlU3dpbmdCcm93c2VyLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPlNpbXBsZVN3aW5nQnJvd3NlcjwvdGl0bGU+DQogICAgPHZlbmRvcj5PcmFjbGU8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgamF2YS12bS1hcmdzPSItRHByb3h5SG9zdD13d3ctcHJveHkudXMub3JhY2xlLmNvbSAtRHByb3h5UG9ydD04MCAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJTaW1wbGVTd2luZ0Jyb3dzZXIuamFyIiBzaXplPSIxNzQ4MyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCjxzZWN1cml0eT4NCiAgPGFsbC1wZXJtaXNzaW9ucy8+DQo8L3NlY3VyaXR5Pg0KICA8YXBwbGljYXRpb24tZGVzYyBtYWluLWNsYXNzPSJzaW1wbGVzd2luZ2Jyb3dzZXIuU2ltcGxlU3dpbmdCcm93c2VyIiAgbmFtZT0iU2ltcGxlU3dpbmdCcm93c2VyIiA+DQogIDwvYXBwbGljYXRpb24tZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedsimpleswingbrowser() {
+        dtjava.embed(
+            {
+                id : 'simpleswingbrowser',
+                toolkit : 'swing',
+                url : 'SimpleSwingBrowser_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU2ltcGxlU3dpbmdCcm93c2VyX2Jyb3dzZXIuam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+U2ltcGxlU3dpbmdCcm93c2VyPC90aXRsZT4NCiAgICA8dmVuZG9yPk9yYWNsZTwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1EcHJveHlIb3N0PXd3dy1wcm94eS51cy5vcmFjbGUuY29tIC1EcHJveHlQb3J0PTgwICIgIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICA8amFyIGhyZWY9IlNpbXBsZVN3aW5nQnJvd3Nlci5qYXIiIHNpemU9IjE3NDgzIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KPHNlY3VyaXR5Pg0KICA8YWxsLXBlcm1pc3Npb25zLz4NCjwvc2VjdXJpdHk+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9InNpbXBsZXN3aW5nYnJvd3Nlci5TaW1wbGVTd2luZ0Jyb3dzZXIiICBuYW1lPSJTaW1wbGVTd2luZ0Jyb3dzZXIiID4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 '
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedsimpleswingbrowser);
+</script>
+
+</head><body>
+<h2>Test page for <b>SimpleSwingBrowser</b></h2>
+  <b>Webstart:</b> <a href='SimpleSwingBrowser.jnlp' onclick="return launchApplication('SimpleSwingBrowser.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

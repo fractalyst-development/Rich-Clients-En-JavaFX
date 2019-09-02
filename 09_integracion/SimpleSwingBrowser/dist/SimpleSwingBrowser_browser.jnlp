@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SimpleSwingBrowser_browser.jnlp">
+  <information>
+    <title>SimpleSwingBrowser</title>
+    <vendor>Oracle</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-DproxyHost=www-proxy.us.oracle.com -DproxyPort=80 "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SimpleSwingBrowser.jar" size="17483" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="simpleswingbrowser.SimpleSwingBrowser"  name="SimpleSwingBrowser" >
+  </applet-desc>
+  <update check="always"/>
+</jnlp>

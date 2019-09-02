@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ColorfulCircles_1.jnlp">
+  <information>
+    <title>ColorfulCircles_1</title>
+    <vendor>Oracle</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ColorfulCircles_1.jar" size="4961" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <jfx:javafx-desc  width="800" height="600" main-class="colorfulcircles.ColorfulCircles"  name="ColorfulCircles_1" />
+  <update check="background"/>
+</jnlp>
